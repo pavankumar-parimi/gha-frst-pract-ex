@@ -9,7 +9,7 @@ jobs:
             - name: Install NodeJs
               uses: actions/setup-node@v3
               with: 
-                node-version: 18
+                node-version: 20
             - name: Install Dependencies
               run: npm ci
             - name: Lint the code
@@ -25,10 +25,10 @@ jobs:
             - name: Install NodeJs
               uses: actions/setup-node@v3
               with: 
-                node-version: 18
+                node-version: 20
             - name: Install Dependencies
               run: npm ci
             - name: build app
-              run: npm build
+              run: npm run build
             - name: Deploy app
               run: "Deploying ..."
